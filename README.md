@@ -1,4 +1,4 @@
-# eribox_test_structure
+# EriboxTest
 Teste para contratação de novo desenvolvedor para o Eribox
 
 INSTRUÇÕES
