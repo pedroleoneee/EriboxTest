@@ -9,3 +9,9 @@ INSTRUÇÕES
 4. A aplicação está configurada para usar o banco MySQL utilzando o esquema eribox_test para acesso localhost.
 5. O produto deve ter ao menos informações de nome, código e preço. 
 6. Validações, coesão, acoplamento, estética e qualidade do código serão levados em consideração na avaliação.
+
+INSTRUÇÕES DE ENVIO
+
+1. Para envio do projeto você de subir o projeto base para um repositório na sua conta do Github.
+2. O repositório de envio deve ser privado.
+3. Após finalizado a projeto envie o link do seu repositório por email e adicione o usuário cristripoli como colaborador.
