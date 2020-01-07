@@ -19,8 +19,8 @@ INSTRUÇÕES
 
 INSTRUÇÕES DE ENVIO
 
-1. Para envio do projeto você de subir o projeto base para um repositório na sua conta do Github.
+1. Para envio do projeto você deve subir o projeto base para um repositório na sua conta do Github.
 
 2. O repositório de envio deve ser privado.
 
-3. Após finalizado a projeto envie o link do seu repositório por email e adicione o usuário cristripoli como colaborador.
+3. Após finalizado a projeto adicione o usuário cristripoli como colaborador e envie o link de convite do seu repositório por email.
