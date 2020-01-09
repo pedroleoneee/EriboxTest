@@ -16,6 +16,22 @@ public class GenericDAO<T, ID extends Serializable>{
 	@PersistenceContext
 	private EntityManager entityManager;
 	
+	public void save(T entity) {
+		
+	}
+	
+	public void update(T entity) {
+		
+	}
+
+	public void delete(T entity) {
+		
+	}
+	
+	public List<T> find() {
+		return null;
+	}
+	
     private final Class<T> oClass;			
 
 	public Class<T> getObjectClass() {

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif !important;
+}
+
+form{
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0%;
+}
+
+tr, td{
+	border: none !important;
+}
+
+.ui-inputtext{
+	width: 350px;
+	border-top: none !important;
+	border-left: none !important;
+	border-right: none !important;
+	border-bottom: 1px solid #d1d1e0 !important;
+	box-shadow: 0 0 0 0 !important;
+    outline: 0 !important;
+    -webkit-transition: all .1s linear !important;
+    -moz-transition: all .1s linear !important;
+    font-size: 15px !important;
+}
+
+
+::-webkit-input-placeholder{
+	font-family: 'Quicksand', sans-serif !important;
+}
+
+::-moz-placeholder { 
+   font-family: 'Quicksand', sans-serif !important;
+}
+
+.ui-button{
+	width: 350px !important;
+}
+
+.ui-panel{
+	box-shadow: 2px 2px 0 #333 !important;
+	margin-top: 2%;
+}
+
+.btnCadastro{
+	background-image: linear-gradient(#002db3, #002db3) !important;
+	color: #fff !important;
+	border: none !important;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: normal !important;
+}
+
+.btnCadastro:hover{
+	background-image: linear-gradient(#3366ff, #3366ff) !important;
+	box-shadow: none !important;
+}

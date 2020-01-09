@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<ui:composition 
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	
+	<f:metadata>
+		<f:viewParam name="id" value="#{productController.product}" />
+	</f:metadata>
+	
+	<h:head>
+		<title>
+			<ui:insert>Listagem de produtos</ui:insert>
+		</title>
+		<h:outputStylesheet library="css" name="styleMeasures.css"/>
+	</h:head>
+	
+	<h:body>
+		
+		<h:form id="form">
+			<p:growl showDetail="false" autoUpdate="true" showSummary="true"/>
+			<p:panel>
+				<br/>
+				<p:fieldset>
+					Seus produtos
+					<br/><br/>
+					<p:dataTable value="#{productController.products}" var="products"
+					border="1" cellspacing="0" cellpadding="2" paginator="true" rows="10"
+					paginatorPosition="bottom" >
+						<p:column headerText="Produtos" sortBy="#{products.name}" style="text-align: center;" width="12%" >
+							<h:outputText value="#{products.name}"/>
+						</p:column>
+						<p:column headerText="Preço" sortBy="#{products.price}"  style="text-align: center;" width="15%" >
+							<h:outputText value="#{products.price}"/>
+						</p:column>
+						<p:column headerText="Ações" width="10%">
+							<p:commandButton class="btnRemove" title="Excluir" icon="ui-icon-trash"
+								update="@form"  action="#{productController.deletarProduto}">
+								<f:setPropertyActionListener value="#{products}" target="#{productControler.productsSelected}"/>
+							</p:commandButton>
+							
+							<p:commandButton class="btnLimpar" title="Atualizar" icon="ui-icon-pencil"
+								update="@form"  action="#{productControler.atualizarProduct}">
+								<f:setPropertyActionListener value="#{product}" target="#{measureController.measureSelected}"/>
+							</p:commandButton>
+						</p:column>
+					</p:dataTable>
+					
+				</p:fieldset>
+			</p:panel>
+			
+			
+		</h:form>
+		
+		<h:outputScript library="js" name="script.js"/>
+	</h:body>
+
+</ui:composition>
