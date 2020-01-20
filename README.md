@@ -23,4 +23,6 @@ INSTRUÇÕES DE ENVIO
 
 2. O repositório de envio deve ser privado.
 
+4. Escrever no readme.md os passos para execução do seu teste.
+
 3. Após finalizado a projeto adicione o usuário cristripoli como colaborador e envie o link de convite do seu repositório por email.
