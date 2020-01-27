@@ -5,7 +5,7 @@ INSTRUÇÕES
 
 1. Criar um CRUD de 'Produto' usando as classes, páginas e configurações já existentes na aquitetura do projeto.
 
-2. A arquitetura do projeto foi desenvolvida utilizando JSF (Primefaces), Spring Framework e JPA (Hibernate provider), Tomcat 9 e Java 8.
+2. A arquitetura do projeto foi desenvolvida utilizando JSF (Primefaces), Spring Framework e JPA (Hibernate provider), Tomcat 9 e Java 8..
 
 3. Caso você sinta necessidade, novas classes, configurações e páginas podem ser adicionadas, porém as já existentes devem ser utilizadas.
 
