@@ -8,36 +8,66 @@
 <h:head>Eribox Test</h:head>
 <h:body>
 	<h1>Teste Eribox ICC</h1>
-	<h:form>
-		<p:growl id="growl" life="2000" />
-		<p:panelGrid columns="2">
-			<f:facet name="header">
-				<p:graphicImage name="EriboxTest/images/camisa.jpg" />
-			</f:facet>
 
-			<h:outputText value="Nome do produto:" />
-			<h:outputText value="Camisa T-shirt" />
-
-			<h:outputText value="Preço:" />
-			<h:outputText value="R$ 25,26" />
-
-			<h:outputText value="Código:" />
-			<h:outputText value="CFG2125M44" />
-
-			<h:outputText value="Tamanho:" />
-			<h:outputText value="P" />
-
-			<f:facet name="footer">
-				<p:commandButton value="Atualizar" id="update" update="growl"
-					action="#{mbProductController.btUpdate}" style="margin-right:20px;"
+	<h3>Criar novo Produto</h3>
+	<div class="p-grid">
+		<div class="p-col-4">
+			<h:form>
+				<div class="p-grid">
+					<div class="p-col">
+						<p:outputLabel for="name" value="Nome: "></p:outputLabel>
+						<p:inputText id="name" value="#{mbProductController.product.name}"></p:inputText>
+					</div>
+					<div class="p-col">
+						<p:outputLabel for="code" value="Código: "></p:outputLabel>
+						<p:inputText id="code" value="#{mbProductController.product.code}"></p:inputText>
+					</div>
+					<div class="p-col">
+						<p:outputLabel for="price" value="Preço: "></p:outputLabel>
+						<p:inputText id="price"
+							value="#{mbProductController.product.price}"></p:inputText>
+					</div>
+					<div class="p-col">
+						<p:outputLabel for="image" value="Imagem: "></p:outputLabel>
+						<p:inputText id="image"
+							value="#{mbProductController.product.image}"></p:inputText>
+					</div>
+				</div>
+				<p:commandButton value="Salvar" id="save"
+					action="#{mbProductController.btSave}" style="margin-right:20px;"
 					styleClass="ui-priority-primary" />
-			</f:facet>
-		</p:panelGrid>
 
-		<p:commandButton value="Salvar" id="save" update="growl"
-			action="#{mbProductController.btSave}" style="margin-right:20px;"
-			styleClass="ui-priority-primary" />
+			</h:form>
+		</div>
+		<div class="p-col-8">
+			<h:form>
+				<p:growl id="growl" life="2000" />
+				<p:panelGrid columns="2">
+					<f:facet name="header">
+						<p:graphicImage name="EriboxTest/images/camisa.jpg" />
+					</f:facet>
 
-	</h:form>
+					<h:outputText value="Nome do produto:" />
+					<h:outputText value="Camisa T-shirt" />
+
+					<h:outputText value="Preço:" />
+					<h:outputText value="R$ 25,26" />
+
+					<h:outputText value="Código:" />
+					<h:outputText value="CFG2125M44" />
+
+					<h:outputText value="Tamanho:" />
+					<h:outputText value="P" />
+
+					<f:facet name="footer">
+						<p:commandButton value="Atualizar" id="update" update="growl"
+							action="#{mbProductController.btUpdate}"
+							style="margin-right:20px;" styleClass="ui-priority-primary" />
+					</f:facet>
+				</p:panelGrid>
+			</h:form>
+		</div>
+	</div>
+
 </h:body>
 </html>

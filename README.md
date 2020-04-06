@@ -1,5 +1,15 @@
 # EriboxTest
-Teste para contratação de novo desenvolvedor para o Eribox
+
+
+### Compilação
+
+- Não estava conseguindo rodar pois precisava do .classpath e .project que não vinha no projeto
+- Reinstalação MySql. Tinha instalado o MySQL 8 que tinha uma criptografia especifica e mais segura. Precisei instalar a versão compativel com as anteriores.
+- Fazer configuração do banco de dados no arquivo persistence.xml, colocar user and password que criei.
+
+### 
+
+
 
 INSTRUÇÕES
 
