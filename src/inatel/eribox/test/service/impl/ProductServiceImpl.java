@@ -21,13 +21,13 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public List<Product> findAll() {
-		// TODO Auto-generated method stub
+		// lista todos produtos
 		return null;
 	}
 
 	@Override
 	public Product updateProduct(Product product) {
-		// TODO Auto-generated method stub
+		// Atualiza todos produtos
 		return null;
 	}
 
@@ -39,7 +39,7 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public void deleteById(Integer integer) {
-		// TODO Auto-generated method stub
+		// Deleta produto por ID
 
 	}
 

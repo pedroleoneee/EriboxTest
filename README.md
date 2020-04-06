@@ -1,17 +1,25 @@
 # EriboxTest
 
+## Problemas
+
+- Não consegui rodar o hibernate com session factory ou outros que tentei também.
+- Fiquei quase metade da manhã e parte da tarde toda tentando utilizar e configurar o hibernate e não consegui.
+
+## O que fiz
+
+- Criei a tela para listar os produtos
+- Criei o mapeamento com services e DAO
+- Criei o form para criação de um novo produto
+- Criei as ações para Salvar, editar, atualizar e deletar. (Somente as chamadas)
 
 ### Compilação
 
-- Não estava conseguindo rodar pois precisava do .classpath e .project que não vinha no projeto
+- Não estava conseguindo rodar pois precisava do .classpath e .project que não vinha no projeto. Pois o Eclipse não abria e não encontrava o projeto.
 - Reinstalação MySql. Tinha instalado o MySQL 8 que tinha uma criptografia especifica e mais segura. Precisei instalar a versão compativel com as anteriores.
 - Fazer configuração do banco de dados no arquivo persistence.xml, colocar user and password que criei.
 
-### 
 
-
-
-INSTRUÇÕES
+### INSTRUÇÕES
 
 1. Criar um CRUD de 'Produto' usando as classes, páginas e configurações já existentes na aquitetura do projeto.
 

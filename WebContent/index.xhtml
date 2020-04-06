@@ -10,8 +10,8 @@
 	<h1>Teste Eribox ICC</h1>
 
 	<h3>Criar novo Produto</h3>
-	<div class="p-grid">
-		<div class="p-col-4">
+	<div class="ui-g">
+		<div class="ui-lg-12">
 			<h:form>
 				<div class="p-grid">
 					<div class="p-col">
@@ -39,35 +39,45 @@
 
 			</h:form>
 		</div>
-		<div class="p-col-8">
+		<div class="ui-lg-12">
 			<h:form>
-				<p:growl id="growl" life="2000" />
-				<p:panelGrid columns="2">
-					<f:facet name="header">
-						<p:graphicImage name="EriboxTest/images/camisa.jpg" />
-					</f:facet>
+				<div class="ui-g">
+					<p:repeat id="listProducts"
+						value="#{mbProductController.listProducts}" var="item">
 
-					<h:outputText value="Nome do produto:" />
-					<h:outputText value="Camisa T-shirt" />
+						<div class="ui-g-3">
+							<p:panelGrid columns="2">
+								<f:facet name="header">
+									<p:graphicImage name="EriboxTest/images/camisa.jpg" />
+								</f:facet>
 
-					<h:outputText value="Preço:" />
-					<h:outputText value="R$ 25,26" />
+								<h:outputText value="Nome do produto:" />
+								<h:outputText value="#{item.name}" style="font-weight: bold" />
 
-					<h:outputText value="Código:" />
-					<h:outputText value="CFG2125M44" />
+								<h:outputText value="Preço:" />
+								<h:outputText value="#{item.price}" style="font-weight: bold" />
 
-					<h:outputText value="Tamanho:" />
-					<h:outputText value="P" />
+								<h:outputText value="Código:" />
+								<h:outputText value="#{item.code}" style="font-weight: bold" />
 
-					<f:facet name="footer">
-						<p:commandButton value="Atualizar" id="update" update="growl"
-							action="#{mbProductController.btUpdate}"
-							style="margin-right:20px;" styleClass="ui-priority-primary" />
-					</f:facet>
-				</p:panelGrid>
+								<h:outputText value="Imagem:" />
+								<h:outputText value="#{item.image}" style="font-weight: bold" />
+
+								<f:facet name="footer">
+									<p:commandButton value="Atualizar" id="update"
+										action="#{mbProductController.btUpdate}"
+										style="margin-right:20px;" styleClass="ui-priority-primary" />
+									<p:commandButton value="Deletar" id="delete"
+										action="#{mbProductController.btDelete}"
+										style="margin-right:20px;" styleClass="ui-priority-primary" />
+								</f:facet>
+							</p:panelGrid>
+						</div>
+
+					</p:repeat>
+				</div>
 			</h:form>
 		</div>
 	</div>
-
 </h:body>
 </html>
